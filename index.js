@@ -1,8 +1,12 @@
 const express = require('express');
+const path = require('path')
 
 const app = express();
 
-const videoRoute = require('./viedoRouter.js')
+const videoRoute = require('./viedoRouter.js');
+const paypalRoute = require('./paypal.js');
+
+// app.use(express.static(path.join(__dirname + 'css')));
 
 app.get('/', (req, res) => {
   // directory name plus filename
@@ -10,6 +14,7 @@ app.get('/', (req, res) => {
 });
 
 app.use('/video', videoRoute)
+app.use('/pay', paypalRoute)
 
 
 app.listen(3000, ()=> {

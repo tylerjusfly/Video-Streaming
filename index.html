@@ -4,21 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css">
     <title>Video Streaming With Node</title>
-    <style>
-        body {
-            margin: 5% auto;
-            max-width: 100%;
-            background-color: rgb(14, 14, 14);
-            padding-top: 10%;
-            padding-left: 35%;
-        }
-    </style>
+        <style>
+          body {
+      margin: 5% auto;
+      max-width: 100%;
+      background-color: rgb(14, 14, 14);
+      padding-top: 5%;
+      padding-left: 35%;
+    }
+    body button{
+      background-color: aliceblue;
+      color: black;
+      padding: 20px;
+      cursor: pointer;
+    }
+        </style>
 </head>
 <body>
   <h1 style="color: aliceblue;">Watch this video</h1>
-    <video id="videoPlayer" width="50%" controls muted="muted" autoplay>
+    <video id="videoPlayer" width="50%" controls autoplay>
         <source src="/video" type="video/mp4" />
     </video>
-</body>>
+    <form action="/pay" method="post">
+      <button>Buy With PayPal</button>
+      
+    </form>
+</body>
 </html>
