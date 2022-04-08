@@ -16,8 +16,8 @@ router.post('/', (req, res) => {
         "payment_method": "paypal"
     },
     "redirect_urls": {
-        "return_url": "/pay/success",
-        "cancel_url": "/pay/cancel"
+        "return_url": "https://stream1996.herokuapp.com/pay/success",
+        "cancel_url": "https://stream1996.herokuapp.com/pay/cancel"
     },
     "transactions": [{
         "item_list": {
