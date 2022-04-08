@@ -16,8 +16,8 @@ router.post('/', (req, res) => {
         "payment_method": "paypal"
     },
     "redirect_urls": {
-        "return_url": "http://localhost:3000/pay/success",
-        "cancel_url": "http://localhost:3000/pay/cancel"
+        "return_url": "https://reliable-begonia-d22a9e.netlify.app/pay/success",
+        "cancel_url": "https://reliable-begonia-d22a9e.netlify.app//pay/cancel"
     },
     "transactions": [{
         "item_list": {
@@ -71,13 +71,13 @@ router.get('/success', (req, res) => {
         throw error;
     } else {
         console.log(JSON.stringify(payment));
-        res.sendFile(__dirname + "/success.html");
+        res.render("success");
     }
 });
 });
 
 router.get('/cancel', (req, res) => {
-  res.sendFile(__dirname + "/err.html")
+  res.render("err")
 });
 
 

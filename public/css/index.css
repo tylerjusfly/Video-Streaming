@@ -2,10 +2,12 @@ body {
   margin: 5% auto;
   max-width: 100%;
   background-color: rgb(14, 14, 14);
-  padding-top: 10%;
+  padding-top: 5%;
   padding-left: 35%;
 }
 body button{
   background-color: aliceblue;
   color: black;
+  padding: 20px;
+  cursor: pointer;
 }
