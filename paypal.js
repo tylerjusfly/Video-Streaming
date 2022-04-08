@@ -17,7 +17,7 @@ router.post('/', (req, res) => {
     },
     "redirect_urls": {
         "return_url": "https://reliable-begonia-d22a9e.netlify.app/pay/success",
-        "cancel_url": "https://reliable-begonia-d22a9e.netlify.app//pay/cancel"
+        "cancel_url": "https://reliable-begonia-d22a9e.netlify.app/pay/cancel"
     },
     "transactions": [{
         "item_list": {
