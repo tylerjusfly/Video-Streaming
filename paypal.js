@@ -16,8 +16,8 @@ router.post('/', (req, res) => {
         "payment_method": "paypal"
     },
     "redirect_urls": {
-        "return_url": "https://reliable-begonia-d22a9e.netlify.app/pay/success",
-        "cancel_url": "https://reliable-begonia-d22a9e.netlify.app/pay/cancel"
+        "return_url": "/pay/success",
+        "cancel_url": "/pay/cancel"
     },
     "transactions": [{
         "item_list": {
