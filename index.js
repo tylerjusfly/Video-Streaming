@@ -4,6 +4,7 @@ const ejs = require('ejs');
 const expressLayouts = require('express-ejs-layouts')
 
 const app = express();
+const PORT = process.env.PORT || 3000
 
 const videoRoute = require('./viedoRouter.js');
 const paypalRoute = require('./paypal.js');
@@ -25,6 +26,6 @@ app.use('/video', videoRoute)
 app.use('/pay', paypalRoute)
 
 
-app.listen(3000, ()=> {
+app.listen(PORT, ()=> {
   console.log('App connected')
 });
